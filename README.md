@@ -10,7 +10,9 @@ Resposibilities:
 - Update user picture function
 - Backend profile updates
 
-Demo: backend is currently being updated for compatibility with Heroku, however the web app can still be run locally. Meanwhile, screenshots of the app can found in the demo folder.
+Demo: https://github.com/FeHioe/Tutor-Me/tree/master/demo
+
+*The backend is currently being updated for compatibility with Heroku, however the web app can still be run locally. Meanwhile, screenshots of the app can found in the demo folder.
 
 To run locally:
 - Start the Mongo daemon ('mongod' command) in terminal or command prompt - MongoDB must be installed
