@@ -10,9 +10,8 @@ var io = require('socket.io')(http);
 var router = express.Router();
 
 //initialize database
-//var mongoose = require('mongoose');
-//var local_db = 'mongodb://127.0.0.1:27017/test';
-//mongoose.connect('process.env.MONGODB_URI || local_db');
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://127.0.0.1:27017/test');
 
 //Get db models
 var User = require('../models/user');
