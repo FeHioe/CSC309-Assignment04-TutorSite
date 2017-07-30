@@ -11,7 +11,8 @@ var router = express.Router();
 
 //initialize database
 var mongoose = require('mongoose');
-mongoose.connect('process.env.MONGODB_URI'); //mongodb://127.0.0.1:27017/test for local
+var local_db = 'mongodb://127.0.0.1:27017/test';
+mongoose.connect('mongodb://fehioe:carrots5@ds129003.mlab.com:29003/tutorme || local_db');
 
 //Get db models
 var User = require('../models/user');
