@@ -4,7 +4,7 @@
   "description": "A basic web app that uses MongoDB and Node.js.",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node bin/www"
   },
   "author": "Felicia Hioe",
   "dependencies": {
