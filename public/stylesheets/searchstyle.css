@@ -1,0 +1,300 @@
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+
+body {
+    height:100%;
+    background-color: #d8d8d8;
+    margin:0px;
+    width: 100%;
+}
+
+p { 
+    margin-top: 20px; 
+    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+table{
+
+    width: 70%;
+    border-collapse: collapse;
+    margin:auto;
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+h3 {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Bree Serif', serif;
+    text-align: center;
+    font-size: 15px;
+}
+
+.search_box{
+
+
+    width: 70%;
+    height: 30px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.search-main {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.search-main button {
+    height: 100%;
+    width: 5%;
+    float: right;
+    border: 0;
+    background-color: #137458;
+    color: white;
+}
+
+.search-main button:hover {
+
+    background-color: #599d8a;
+
+}
+
+.search-main input {
+    width: 95%;
+    height: 100%;
+    float: left;
+    font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+    padding: 0;
+    border: 0;
+}
+
+.name { 
+
+    width: 70%;
+
+}
+
+.rating_cell{
+    width: 10%;
+}
+
+.rating {
+
+    width:80.7px;
+    height:15px;
+}
+
+.price_cell{ 
+    width: 10%; 
+}
+
+.profile_cell{
+    width: 10%;
+    padding: 0;
+}
+
+.profile_cell button {
+
+    border:0;
+    background-color: #137458;
+    height: 100%;
+    width: 100%;
+    color: white;
+    padding: 0;
+    margin:auto;
+}
+
+.profile_cell button:hover {
+    background-color: #0eab7e;
+}
+
+.tableHeader {
+
+    background-color: #599d8a;
+    color: white;
+
+}
+
+/* Header Styles */
+.header {
+    width:100%;
+    height:75px;
+    background-color: #137458;
+    overflow: hidden;
+}
+
+#logo{
+    padding-left: 15px;
+}
+
+/* Search bar */
+.search_container{
+	position: absolute;
+	right: 0px;
+	padding-right: 15px;
+	margin-top: -100px;
+	border-radius: 5px;
+}
+
+.cf:before, .cf:after{
+    content:"";
+    display:table;
+}
+ 
+.cf:after{
+    clear:both;
+}
+ 
+.cf{
+    zoom:1;
+}    
+
+ /* Search bar - Form wrapper styling */
+.search-wrapper {
+width: 250px;
+margin: 45px auto 50px auto;
+box-shadow: 0 1px 1px rgba(0, 0, 0, .4) inset, 0 1px 0 rgba(255, 255, 255, .2);
+}
+ 
+/* Search bar - Form text input */
+.search-wrapper input {
+width: 168px;
+height: 20px;
+padding: 10px 5px;
+float: left;
+font: bold 15px 'lucida sans', 'trebuchet MS', 'Tahoma';
+border: 0;
+background: #EEE;
+border-radius: 3px 0 0 3px;
+}
+ 
+.search-wrapper input:focus {
+    outline: 0;
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0,0,0,.8) inset;
+}
+ 
+.search-wrapper input::-webkit-input-placeholder {
+   color: #999;
+   font-weight: normal;
+   font-style: italic;
+}
+ 
+.search-wrapper input:-moz-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+.search-wrapper input:-ms-input-placeholder {
+    color: #999;
+    font-weight: normal;
+    font-style: italic;
+}    
+ 
+/* Search bar - Form submit button */
+.search-wrapper button {
+	overflow: visible;
+	position: relative;
+	float: right;
+	border: 0;
+	padding: 0;
+	height: 40px;
+	width: 72px;
+	color: white;
+	text-transform: uppercase;
+	background: #aaaaaa;
+	border-radius: 0 3px 3px 0;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+}
+   
+.search-wrapper button:hover{     
+    background: #599d8a;
+}   
+   
+.search-wrapper button:active,
+.search-wrapper button:focus{   
+    background: #599d8a;
+    outline: 0;   
+}
+       
+.search-wrapper button::-moz-focus-inner { /* remove extra button spacing for Mozilla Firefox */
+    border: 0;
+    padding: 0;
+} 
+
+
+/* Grid layout */
+ul.rig {
+    list-style: none;
+    font-size: 0px;
+    margin-left: -2.5%; /* should match li left margin */
+}
+ul.rig li {
+    display: inline-block;
+    padding: 10px;
+    margin: 25px 0 1.8% 1.8%;
+    background: #fff;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    font-size: 1rem;
+    vertical-align: top;
+    box-shadow: 0 0 5px #ddd;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+ul.rig li img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 0 10px;
+}
+ul.rig li h3 {
+    margin: 0 0 5px;
+}
+ul.rig li p {
+    font-size: .9em;
+    line-height: 1.5em;
+    color: #999;
+}
+/* class for 2 columns */
+ul.rig.columns-2 li {
+    width: 47.5%; /* this value + 2.5 should = 50% */
+}
+/* class for 3 columns */
+ul.rig.columns-3 li {
+    width: 30.83%; /* this value + 2.5 should = 33% */
+}
+/* class for 4 columns */
+ul.rig.columns-4 li {
+    width: 22.5%; /* this value + 2.5 should = 25% */
+}
+ 
+@media (max-width: 480px) {
+    ul.grid-nav li {
+        display: block;
+        margin: 0 0 5px;
+    }
+    ul.grid-nav li a {
+        display: block;
+    }
+    ul.rig {
+        margin-left: 0;
+    }
+    ul.rig li {
+        width: 100% !important; /* over-ride all li styles */
+        margin: 0 0 20px;
+    }
+}

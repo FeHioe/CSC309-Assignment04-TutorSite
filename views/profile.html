@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<!--Head Info-->
+  <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/profilestyle.css">
+    <title>Tutor Me</title>
+    <link rel="icon" href="/images/favicon.png"> <!-- favicon not yet made -->
+
+  </head>
+
+    <body>
+    <!-- Header bar -->
+        <div class="header">
+            <a href="/"><img  id="logo" src="/images/logo.png" alt="Logo"></a>        </div>
+        <div class="search_container">
+            <form action="/searchFind" method='post' class="search-wrapper cf">
+                <input type="text" placeholder="Search..." required="">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div id="profile">
+            <p id="pp" class="re">PROFILE</p>
+            <div class="inline">
+                <div id="ppic"><img id="profilepic" alt="Profile Picture"></div>
+                <div id="profileinfo">
+                    <p class="head">Personal Information</p>
+                    <p id="name">Name: </p>
+                    <p id="occupation">Occupation: </p>
+                    <p id="education">Education: </p>
+                    <p id="experience">Past Experience: </p>
+                    <p id="about">About Me: </p>
+                </div>
+                <div id="tutorinfo">
+                    <p class="head">Tutor Information</p>
+                    <p id="rating">Overall Rating: </p>
+                    <p id="phone">Phone Number: </p>
+                    <p id="email">Email: </p>
+                    <p id="location">Location: </p>
+                    <p id="tutoring">Tutoring: </p>
+                    <p id="rate">Base Rate Per Hour: </p>
+                    <div class="inline">
+                        <button class="button" onclick="seeSched()">See Schedule</button>
+                        <button class="button" onclick="sendMsg()">Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="reviews">
+        </div>
+        <script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+        <script src="javascript/profile.js"></script>
+    </body>
+</html>

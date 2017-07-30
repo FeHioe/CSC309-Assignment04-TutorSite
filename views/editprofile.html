@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<!--Head Info-->
+  <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/editprofilestyle.css">
+    <title>Tutor Me</title>
+    <link rel="icon" href="images/favicon.png"> <!-- favicon not yet made -->
+  </head>
+
+    <body>
+    <!-- Header bar -->
+        <div class="header">
+            <a href="/"><img  id="logo" src="images/logo.png" alt="Logo"></a></div>
+        <div class="search_container">
+            <form action="/searchFind" method='post' class="search-wrapper cf">
+                <input type="text" placeholder="Search..." required="">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div id="profile">
+        	<div class="left">
+                <div class="right">
+        	        <img id="profilepic" src=<%=userinfo.picture%> alt="Profile Picture">
+                    <a href="/addPicture"><button class="button" id="updatepic">Update Profile Picture</button></a>
+                </div>
+        		<div id="profileinfo">
+                    <form action="/editingProfile" method='post'>
+                    <fieldset>
+                    <legend>Profile Information:</legend><br>
+        			Name: <input type="text" name="name" size="30" value=<%=userinfo.name%>><br><br>
+                    Phone Number: <input type="tel" name="number" pattern="^\d{3}-\d{3}-\d{4}$" placeholder="xxx-xxx-xxxx"><br><br>
+                    Email: <input  type="email" name="email" placeholder="Email..." value=<%=userinfo.email%>><br><br>
+                    Location: <input type="text" name="city" placeholder="City" value=<%=userinfo.city%>><input type="text" name="country" placeholder="Country" value=<%=userinfo.country%>><br><br>
+                    Tutoring:
+                        <td><input type='checkbox' name='math' id='math' value="Math"/>
+                            <label for="math">Math</label></td>
+                            <td><input type='checkbox' name='biology' id='biology' value="Biology"/>
+                            <label for="biology">Biology</label></td>
+                            <td><input type='checkbox' name='chemistry' id='chemistry' value="Chemistry"/>
+                            <label for="chemistry">Chemistry</label></td>
+                        </tr><tr>
+                            <td><input type='checkbox' name='physics' id='physics' value="Physics"/>
+                            <label for="physics">Physics</label></td>
+                            <td><input type='checkbox' name='geography' id='geography' value="Geography"/>
+                            <label for="geography">Geography </label></td>
+                            <td><input type='checkbox' name='english' id='english' value="English"/>
+                            <label for="english">English</label></td>
+                        <tr></tr>
+                            <td><input type='checkbox' name='history' id='hist' value="History"/>
+                            <label for="history">History</label></td><br>
+                            <td><input type='checkbox' name='none' id='none' value="none"/>
+                            <label for="history">None</label></td>
+                        </tr><br><br>
+
+                    Base Rate Per Hour: <input type="text" name="rate" value=<%=userinfo.rate%> placeholder=<%=userinfo.rate%>><br><br>
+                    Occupation: <input type="text" name="occupation" size="30" placeholder="Occupation" value=<%=userinfo.occupation%>><br><br>
+                    Education: <input type="text" name="education" placeholder="Education" value=<%=userinfo.education%>><br><br>
+                    Past Experience: <br><br><textarea rows="4" cols="100" name="experience" placeholder="My past Experiences..." ><%=userinfo.experience%></textarea><br><br>
+                    About Me: <br><br><textarea rows="7" cols="100" name="about" placeholder="About Me..."><%=userinfo.about%></textarea><br><br>
+                    <button class="button">Update Profile</button>
+                    </fieldset>
+                    </form>
+        		</div>
+        	</div>
+        </div>
+    </body>
+
+</html>

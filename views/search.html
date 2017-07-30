@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<!--Head Info-->
+	  <head>
+	    <link rel="stylesheet" type="text/css" href="/stylesheets/searchstyle.css">
+	    <title>Tutor Me</title> 
+	    <link rel="icon" href="images/favicon.png"> 
+	  </head>
+
+	<!-- Refresh once for database lag -->
+	 <script type="text/javascript">
+	window.onload = function() {
+    if(!window.location.hash) {
+        window.location = window.location + '#refresh';
+        window.location.reload();
+    }
+}
+    </script> 
+
+	<body>
+	<!-- Header bar -->
+		<div class="header">
+			<a href="/"><img  id="logo" src="images/logo.png" alt="Logo"></a>		</div>
+		<div class="search_container">
+			<form action="/searchFind" method='post' class="search-wrapper cf">
+		        <input type="text" name='search' placeholder="Search..." required="">
+		        <button type="submit">Search</button>
+		    </form>
+		</div>
+
+<% if (location && location.length >0) { %>
+<h3> Recommended Tutors </h3>
+	<ul class="rig columns-4">
+		<% for(var i=0; i < location.length; i++){ %>
+			<% if (i < 5 ) { %>
+				<a href="/profile&username=<%= location[i].username %>">
+				<li>
+					<img src="<%= location[i].picture %>" />
+					<h3><%= location[i].username %></h3>
+					<p>Name: <%=location[i].name %></p>
+					<p>Location: <%=location[i].city %> , <%=location[i].country %></p>
+					<p>Tutoring: <%=location[i].subjects %></p>
+				</li>
+				</a>
+			<% } %>
+		<% } %>
+	</ul>
+<% } %>
+
+<h3> Search Results </h3>
+<!-- Replace tree pictures with user profile pics later -->
+
+<!-- Username -->
+<% if (uname) { %>
+	<h2> Tutors with the username <%=search %> </h2>
+	<ul class="rig columns-4">
+	<a href="/profile&username=<%= uname.username %>">
+		<li>
+			<img src="<%= uname.picture %>" />
+			<h3><%= uname.username %></h3>
+			<p>Name: <%=uname.name %></p>
+			<p>Location: <%=uname.city %> , <%=uname.country %></p>
+			<p>Tutoring: <%=uname.subjects %></p>
+
+		</li>
+	</a>
+	</ul>
+<% } %>
+
+<!-- Name -->
+<% if (names && names.length >0) { %>
+	<h2> Tutors with the name <%=search %> </h2>
+	<ul class="rig columns-4">
+		<% for(var i=0; i < names.length; i++){ %>
+		<a href="/profile&username=<%= names[i].username %>">
+		<li>
+			<img src="<%= names[i].picture %>" />
+			<h3><%= names[i].username %></h3>
+			<p>Name: <%=names[i].name %></p>
+			<p>Location: <%=names[i].city %> , <%=names[i].country %></p>
+			<p>Tutoring: <%=names[i].subjects %></p>
+		</li>
+		</a>
+		<% } %>
+	</ul>
+<% } %>
+
+<!-- Price -->
+<% if (price && price.length >0) { %>
+	<h2> Tutors with the rate of $<%=search %> </h2>
+	<ul class="rig columns-4">
+		<% for(var i=0; i < price.length; i++){ %>
+		<a href="/profile&username=<%= price[i].username %>">
+		<li>
+			<img src="<%= price[i].picture %>" />
+			<h3><%= price[i].username %></h3>
+			<p>Name: <%=price[i].name %></p>
+			<p>Location: <%=price[i].city %> , <%=price[i].country %></p>
+			<p>Tutoring: <%=price[i].subjects %></p>
+		</li>
+		</a>
+		<% } %>
+	</ul>
+<% } %>
+
+<!-- Subject -->
+<% if (subject && subject.length >0) { %>
+	<h2> Tutors who teach <%=search %> </h2>
+	<ul class="rig columns-4">
+		<% for(var i=0; i < subject.length; i++){ %>
+		<a href="/profile&username=<%= subject[i].username %>">
+		<li>
+			<img src="<%= subject[i].picture %>" />
+			<h3><%= subject[i].username %></h3>
+			<p>Name: <%=subject[i].name %></p>
+			<p>Location: <%=subject[i].city %> , <%=subject[i].country %></p>
+			<p>Tutoring: <%=subject[i].subjects %></p>
+		</li>
+		</a>
+		<% } %>
+	</ul>
+<% } %>
+
+	</body>
+
+</html>  
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<!--Head Info-->
+  <head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/picstyle.css">
+    <title>Tutor Me</title> 
+    <link rel="icon" href="images/favicon.png"> 
+  </head>
+
+  <body>
+  <!-- Header bar -->
+    <div class="header">
+      <a href="/"><img  id="logo" src="images/logo.png" alt="Logo"></a></div>
+    <div class="search_container">
+      <form action="/searchFind" method='post' class="search-wrapper cf">
+          <input type="text" name='search' placeholder="Search..." required="">
+          <button type="submit">Search</button>
+      </form>
+    </div>
+
+
+  <h1> Click to choose a profile picture!</h1>
+
+<div class="pics">
+  <form action="/addingPicture"  method='post'>
+    <ul>
+      <li>
+        <label for="avi1"> <img src="images/avi1.jpg"></label>
+        <input onChange='this.form.submit();' type="radio" name="profPic" id="avi1" value="avi1">
+      </li>
+
+      <li>
+        <label for="avi2"><img src="images/avi2.jpg"></label>
+        <input onChange='this.form.submit();' type="radio" name="profPic" id="avi2" value="avi2">
+      </li>
+
+      <li>
+        <label for="avi3"><img  src="images/avi3.jpg"></label>
+        <input onChange='this.form.submit();' type="radio" name="profPic" id="avi3" value="avi3">
+      </li>
+
+      <li>
+        <label for="avi4"><img  src="images/avi4.jpg"></label>
+        <input onChange='this.form.submit();' type="radio" name="profPic" id="avi4" value="avi4">
+      </li>
+
+      <li>
+        <label for="avi5"><img src="images/avi5.jpg"></label>
+        <input onChange='this.form.submit();' type="radio" name="profPic" id="avi5" value="avi5">
+      </li>
+    </ul>
+  </form>
+</div>
+
+  </body>
+
+</html>  
