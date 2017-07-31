@@ -36,4 +36,4 @@ Tutors can also be found using the search bar at the top.
 ![](https://github.com/FeHioe/Tutor-Me/blob/master/demo/search.gif "")
 
 Logins are saved from session to session. Once a user is finished, they can sign out to close a session.
-![](https://github.com/FeHioe/Tutor-Me/blob/master/demo/review.gif "")
+![](https://github.com/FeHioe/Tutor-Me/blob/master/demo/signout.gif "")
