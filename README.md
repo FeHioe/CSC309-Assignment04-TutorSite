@@ -10,7 +10,7 @@ Resposibilities:
 - Update user picture function
 - Backend profile updates
 
-Demo: https://github.com/FeHioe/Tutor-Me/tree/master/demo
+Demo: https://github.com/FeHioe/Tutor-Me/blob/master/demo/demo.md
 
 *The backend is currently being updated for compatibility with Heroku, however the web app can still be run locally. Meanwhile, screenshots of the app can found in the demo folder.
 
