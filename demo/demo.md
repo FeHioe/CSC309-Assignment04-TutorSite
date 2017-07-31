@@ -29,7 +29,7 @@ Incoming and outgoing messages can be viewed in the 'Your Messages' section.
 Likewise, a user's choosen schedule can be viewed in the 'Your Schedule' section.
 ![](https://github.com/FeHioe/Tutor-Me/blob/master/demo/view_sched.gif "")
 
-If a user wants to recommend or show their dissatisfaction with a tutor, they can leave a review for tutor where other users can like or dislike the comment.
+If a user wants to recommend or show their dissatisfaction with a tutor, they can leave a review for the tutor where other users can like or dislike the comment.
 ![](https://github.com/FeHioe/Tutor-Me/blob/master/demo/review.gif "")
 
 Tutors can also be found using the search bar at the top.
